@@ -9,3 +9,4 @@ dist/
 .vite/
 *.xlsx
 *.csv
+*.log
