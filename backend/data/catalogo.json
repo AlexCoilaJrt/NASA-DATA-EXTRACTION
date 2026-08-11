@@ -1,0 +1,49 @@
+[
+  {"parametro": "T2M", "descripcion": "Temperature at 2 Meters", "unidad": "°C", "categoria": "Temperatura"},
+  {"parametro": "T2M_MAX", "descripcion": "Maximum Temperature at 2 Meters", "unidad": "°C", "categoria": "Temperatura"},
+  {"parametro": "T2M_MIN", "descripcion": "Minimum Temperature at 2 Meters", "unidad": "°C", "categoria": "Temperatura"},
+  {"parametro": "T2M_RANGE", "descripcion": "Temperature Range at 2 Meters", "unidad": "°C", "categoria": "Temperatura"},
+  {"parametro": "T2MDEW", "descripcion": "Dew/Frost Point at 2 Meters", "unidad": "°C", "categoria": "Temperatura"},
+  {"parametro": "T2MWET", "descripcion": "Wet Bulb Temperature at 2 Meters", "unidad": "°C", "categoria": "Temperatura"},
+  {"parametro": "TS", "descripcion": "Earth Skin Temperature", "unidad": "°C", "categoria": "Temperatura"},
+
+  {"parametro": "PRECTOTCORR", "descripcion": "Precipitation Corrected", "unidad": "mm/día", "categoria": "Precipitación"},
+  {"parametro": "PRECTOT", "descripcion": "Precipitation", "unidad": "mm/día", "categoria": "Precipitación"},
+
+  {"parametro": "PS", "descripcion": "Surface Pressure", "unidad": "kPa", "categoria": "Presión"},
+  {"parametro": "PSCAL", "descripcion": "Scaled Sea Level Pressure", "unidad": "kPa", "categoria": "Presión"},
+
+  {"parametro": "WS2M", "descripcion": "Wind Speed at 2 Meters", "unidad": "m/s", "categoria": "Viento"},
+  {"parametro": "WS2M_MAX", "descripcion": "Maximum Wind Speed at 2 Meters", "unidad": "m/s", "categoria": "Viento"},
+  {"parametro": "WS2M_MIN", "descripcion": "Minimum Wind Speed at 2 Meters", "unidad": "m/s", "categoria": "Viento"},
+  {"parametro": "WD2M", "descripcion": "Wind Direction at 2 Meters", "unidad": "°", "categoria": "Viento"},
+  {"parametro": "WS50M", "descripcion": "Wind Speed at 50 Meters", "unidad": "m/s", "categoria": "Viento"},
+  {"parametro": "WD50M", "descripcion": "Wind Direction at 50 Meters", "unidad": "°", "categoria": "Viento"},
+
+  {"parametro": "RH2M", "descripcion": "Relative Humidity at 2 Meters", "unidad": "%", "categoria": "Humedad"},
+  {"parametro": "RH2MIN", "descripcion": "Minimum Relative Humidity at 2 Meters", "unidad": "%", "categoria": "Humedad"},
+  {"parametro": "RH2MAX", "descripcion": "Maximum Relative Humidity at 2 Meters", "unidad": "%", "categoria": "Humedad"},
+  {"parametro": "QV2M", "descripcion": "Specific Humidity at 2 Meters", "unidad": "g/kg", "categoria": "Humedad"},
+
+  {"parametro": "ALLSKY_SFC_SW_DWN", "descripcion": "All Sky Surface Shortwave Downward Irradiance", "unidad": "kWh/m²/día", "categoria": "Radiación"},
+  {"parametro": "ALLSKY_SFC_LW_DWN", "descripcion": "All Sky Surface Longwave Downward Irradiance", "unidad": "kWh/m²/día", "categoria": "Radiación"},
+  {"parametro": "ALLSKY_SFC_UVA", "descripcion": "All Sky Surface UVA Irradiance", "unidad": "W/m²", "categoria": "Radiación"},
+  {"parametro": "ALLSKY_SFC_UVB", "descripcion": "All Sky Surface UVB Irradiance", "unidad": "W/m²", "categoria": "Radiación"},
+  {"parametro": "ALLSKY_SFC_UV_INDEX", "descripcion": "All Sky UV Index", "unidad": "", "categoria": "Radiación"},
+  {"parametro": "ALLSKY_KT", "descripcion": "All Sky Insolation Clearness Index", "unidad": "", "categoria": "Radiación"},
+  {"parametro": "ALLSKY_SRF_ALB", "descripcion": "All Sky Surface Albedo", "unidad": "", "categoria": "Radiación"},
+  {"parametro": "CLRSKY_SFC_SW_DWN", "descripcion": "Clear Sky Surface Shortwave Downward Irradiance", "unidad": "kWh/m²/día", "categoria": "Radiación"},
+  {"parametro": "CLRSKY_DNI", "descripcion": "Clear Sky Direct Normal Irradiance", "unidad": "kWh/m²/día", "categoria": "Radiación"},
+  {"parametro": "CLRSKY_KT", "descripcion": "Clear Sky Insolation Clearness Index", "unidad": "", "categoria": "Radiación"},
+  {"parametro": "DNI", "descripcion": "Direct Normal Irradiance", "unidad": "kWh/m²/día", "categoria": "Radiación"},
+  {"parametro": "DIFF", "descripcion": "Diffuse Horizontal Irradiance", "unidad": "kWh/m²/día", "categoria": "Radiación"},
+  {"parametro": "SZA", "descripcion": "Noon Solar Zenith Angle", "unidad": "°", "categoria": "Radiación"},
+  {"parametro": "TOA_SW_DWN", "descripcion": "Top of Atmosphere Shortwave Downward Irradiance", "unidad": "kWh/m²/día", "categoria": "Radiación"},
+
+  {"parametro": "ET0", "descripcion": "Reference Evapotranspiration (ASCE Penman-Monteith)", "unidad": "mm/día", "categoria": "Evapotranspiración"},
+
+  {"parametro": "GV", "descripcion": "Grassland Vegetation", "unidad": "fracción", "categoria": "Vegetación"},
+  {"parametro": "GSI", "descripcion": "Growing Season Index", "unidad": "", "categoria": "Vegetación"},
+  {"parametro": "VH", "descripcion": "Vegetation Health", "unidad": "", "categoria": "Vegetación"},
+  {"parametro": "RHOA", "descripcion": "Air Density", "unidad": "kg/m³", "categoria": "Otros"}
+]
