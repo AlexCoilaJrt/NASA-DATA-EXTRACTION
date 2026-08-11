@@ -7,6 +7,7 @@ import Area from './vistas/Area'
 import Division from './vistas/Division'
 import Catalogo from './vistas/Catalogo'
 import { Button } from './componentes/ui'
+import { useTema } from './contexto/Tema'
 
 const PARAMS_POR_DEFECTO = ['T2M', 'T2M_MAX', 'T2M_MIN', 'PRECTOTCORR', 'WS2M', 'RH2M', 'ALLSKY_SFC_SW_DWN']
 
@@ -33,6 +34,7 @@ export default function App() {
   const [frecuencia, setFrecuencia] = useState('diario')
   const [agregacion, setAgregacion] = useState('promedio')
   const [menuAbierto, setMenuAbierto] = useState(false)
+  const { tema, alternar } = useTema()
 
   useEffect(() => {
     getCatalogo().then(setCatalogo).catch(() => {})
@@ -62,6 +64,10 @@ export default function App() {
       <div className="barra-superior">
         <Button size="icono" variant="secundario" onClick={() => setMenuAbierto(true)} title="Abrir menú">☰</Button>
         <strong>{vista}</strong>
+        <span style={{ flex: 1 }} />
+        <Button size="pequeno" variant="secundario" onClick={alternar} title="Cambiar modo día/noche">
+          {tema === 'noche' ? '☀️ Día' : '🌙 Noche'}
+        </Button>
       </div>
 
       <main className="contenido">

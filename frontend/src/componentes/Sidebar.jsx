@@ -15,6 +15,7 @@ export default function Sidebar({
   frecuencia, setFrecuencia, agregacion, setAgregacion,
 }) {
   const [filtro, setFiltro] = useState('')
+  const { tema, alternar } = useTema()
   const [abiertos, setAbiertos] = useState(() => {
     const inicial = {}
     categoriasDe(catalogo).forEach((c) => { inicial[c] = true })
@@ -50,11 +51,24 @@ export default function Sidebar({
     <>
       <aside className={`sidebar ${menuAbierto ? 'abierta' : ''}`}>
         <div className="logo-bloque">
-          <div className="logo-icono">🛰️</div>
+          <div className="logo-icono">
+            <svg viewBox="0 0 28 28" width="26" height="26" aria-hidden="true">
+              <circle cx="19" cy="8" r="3.4" fill="#fde047" />
+              <g stroke="#fde047" strokeWidth="1.3" strokeLinecap="round">
+                <path d="M19 2.2v2M25.6 5.8l-1.5 1.5M26.8 11h-2.1M25.6 16.2l-1.5-1.5M12.4 5.8l1.5 1.5M11.2 11h2.1" />
+              </g>
+              <path d="M6.5 21.5a3.8 3.8 0 0 1 .6-7.55 4.9 4.9 0 0 1 9.35-1.44A3.5 3.5 0 0 1 18 21.5H6.5z" fill="#fff" opacity=".95" />
+              <path d="M7.8 27.2C5.9 24.9 4.6 23.2 4.6 21.8A3.3 3.3 0 0 1 11 21.8c0 1.4-1.3 3.1-3.2 5.4z" fill="#f43f5e" />
+              <circle cx="7.8" cy="21.7" r="1.4" fill="#fff" />
+            </svg>
+          </div>
           <div>
-            <div className="logo-titulo">DATANASA</div>
+            <div className="logo-titulo">Datos Nasa</div>
             <div className="logo-sub">Datos climáticos NASA POWER<br />División política del Perú</div>
           </div>
+          <Button size="pequeno" variant="secundario" onClick={alternar} title="Cambiar modo día/noche">
+            {tema === 'noche' ? '☀️ Día' : '🌙 Noche'}
+          </Button>
         </div>
 
         <div className="estado-api">

@@ -111,7 +111,7 @@ export default function Division({ params, fechas, frecuencia, agregacion, catal
         <MetricCard icono="🎯" etiqueta="Centroide" valor={centroide ? `${centroide.lat.toFixed(4)}, ${centroide.lon.toFixed(4)}` : null} />
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(270px, 340px) 1fr', gap: 18, alignItems: 'start' }}>
+      <div className="grilla-panel-mapa">
         <Panel titulo="División política">
           <p className="ayuda" style={{ marginTop: -4 }}>
             Elige un departamento completo, una provincia (todos sus distritos) o un distrito puntual.

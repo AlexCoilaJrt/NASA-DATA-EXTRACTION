@@ -4,8 +4,8 @@ import 'leaflet/dist/leaflet.css'
 import 'leaflet-draw'
 import 'leaflet-draw/dist/leaflet.draw.css'
 import { MapContainer, TileLayer, Marker, Rectangle, useMap, useMapEvents } from 'react-leaflet'
+import { useTema } from '../contexto/Tema'
 
-const TILES = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
 const ATRIBUCION = '&copy; OpenStreetMap &copy; CARTO'
 
 const iconoCian = L.divIcon({
@@ -16,10 +16,12 @@ const iconoCian = L.divIcon({
 })
 
 export function MapaBase({ centro, zoom = 6, altura = 420, children }) {
+  const { tema } = useTema()
+  const tiles = `https://{s}.basemaps.cartocdn.com/${tema === 'dia' ? 'light_all' : 'dark_all'}/{z}/{x}/{y}{r}.png`
   return (
     <div className="mapa" style={{ height: altura }}>
       <MapContainer center={centro} zoom={zoom} style={{ height: '100%', width: '100%' }}>
-        <TileLayer attribution={ATRIBUCION} url={TILES} />
+        <TileLayer attribution={ATRIBUCION} url={tiles} key={tiles} />
         <CentroVivo centro={centro} />
         {children}
       </MapContainer>

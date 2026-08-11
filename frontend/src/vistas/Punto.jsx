@@ -54,7 +54,7 @@ export default function Punto({ params, fechas, frecuencia, agregacion, catalogo
         <MetricCard icono="🎯" etiqueta="Coordenadas" valor={`${lat.toFixed(4)}, ${lon.toFixed(4)}`} />
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(270px, 340px) 1fr', gap: 18, alignItems: 'start' }}>
+      <div className="grilla-panel-mapa">
         <Panel titulo="Coordenadas">
           <p className="ayuda" style={{ marginTop: -4 }}>
             Escríbelas o haz clic sobre el mapa para fijar el punto. La ubicación se actualiza en vivo.

@@ -72,7 +72,7 @@ export default function Area({ params, fechas, frecuencia, agregacion, catalogo 
         <MetricCard icono="📐" etiqueta="Estado" valor={valido ? 'Válido' : 'Rango &lt; 2°'} />
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(270px, 340px) 1fr', gap: 18, alignItems: 'start' }}>
+      <div className="grilla-panel-mapa">
         <Panel titulo="Definir el área">
           <p className="ayuda" style={{ marginTop: -4 }}>
             Usa las coordenadas o dibuja un rectángulo sobre el mapa.

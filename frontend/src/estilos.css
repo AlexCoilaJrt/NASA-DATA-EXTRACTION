@@ -318,6 +318,12 @@ p { margin: 0 0 .75rem; }
 .botones-fila { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin: 8px 0 12px; }
 
 /* ---------------------------------- mapa ----------------------------------- */
+.grilla-panel-mapa {
+  display: grid;
+  grid-template-columns: minmax(270px, 340px) 1fr;
+  gap: 18px;
+  align-items: start;
+}
 .mapa {
   border: 1px solid var(--border);
   border-radius: var(--radio);
@@ -469,6 +475,7 @@ tbody tr:last-child td { border-bottom: none; }
   .sidebar.abierta { transform: translateX(0); }
   .superposicion { position: fixed; inset: 0; background: rgba(0, 0, 0, .55); z-index: 45; }
   .grilla-form { grid-template-columns: 1fr; }
+  .grilla-panel-mapa { grid-template-columns: 1fr; }
   .mapa { height: 320px; }
   .grilla-metricas { grid-template-columns: repeat(2, 1fr); gap: 9px; }
   .contenido h1 { font-size: 1.1rem; }
